@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+  <link rel="stylesheet" id="stylesheet" href="main.css">
+
+  <script>
+    function changeCSS() {
+      if(document.getElementById('mode-checkbox').checked == false){
+        document.getElementById('stylesheet').href = 'main.css';
+      }
+      else{
+        document.getElementById('stylesheet').href = 'main_dark.css';
+      }
+      
+}
+
+  </script>
+
+</head>
+<body>
+  <div class="top-pattern"></div> 
+  <div class="container">
+    <div class="title">Social Media Dashboard</div>
+    <div class="total-followers">Total Followers: 23,004</div>
+    <div class="dark-mode">
+      <div class="dark-mode-text" style="display: flex; align-items: center; font-size: 16px">Dark Mode</div> 
+      <div class="dark-mode-switch" style="text-align: right">
+        <label class="switch">
+          <input type="checkbox" onclick="changeCSS()" id="mode-checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="facebook top"></div>
+        <div class="app"><img src="images/icon-facebook.svg" alt="fb">@nathanf</div>
+        <div class="counter">
+          <span class="count">1987</span><br><span class="text">FOLLOWERS</span>
+          
+        </div>
+        <div class="income up"><img src="images/icon-up.svg" alt="up"> 12 Today</div>
+        
+        </div>
+      <div class="card">
+        <div class="twitter top"></div>
+        <div class="app"><img src="images/icon-twitter.svg" alt="twitter">@nathanf</div>
+        <div class="counter">
+          <span class="count">1044</span><br><span class="text">FOLLOWERS</span>
+        </div>
+        <div class="income up"><img src="images/icon-up.svg" alt="up"> 99 Today</div> 
+      </div>
+      <div class="card">
+        <div class="instagram top"></div>
+        <div class="app"><img src="images/icon-instagram.svg" alt="instagram">@realnathanf</div>
+        <div class="counter">
+          <span class="count">11k</span><br><span class="text">FOLLOWERS</span>
+        </div>
+        <div class="income up"><img src="images/icon-up.svg" alt="up"> 1099 Today</div> 
+      </div>
+      <div class="card">
+        <div class="youtube top"></div>
+        <div class="app"><img src="images/icon-youtube.svg" alt="yt">Nathan F.</div>
+        <div class="counter">
+        <span class="count">8239</span><br><span class="text">SUBSCRIBERS</span>
+        </div>
+        <div class="income down"><img src="images/icon-down.svg" alt="down"> 144 Today</div> 
+        
+      </div>
+  </div>
+  <div class="title" style="color: hsl(228, 12%, 44%); margin-top: 2vh;">Overview - Today</div>
+  <div class="cards" style="margin-top: 2.5vh;">
+    <div class="card-overview">
+      <div class="left">
+        <div class="info">Page Views</div>
+        <div class="data">87</div>
+      </div>
+      <div class="right">
+        <div class="info"><img src="images/icon-facebook.svg" alt="fb"></div>
+        <div class="data up"><img src="images/icon-up.svg" alt="up"> 3%</div>
+      </div>
+    </div>
+    <div class="card-overview">
+      <div class="left">
+        <div class="info">Likes</div>
+        <div class="data">52</div>
+      </div>
+      <div class="right">
+        <div class="info"><img src="images/icon-facebook.svg" alt="fb"></div>
+        <div class="data down"><img src="images/icon-down.svg" alt="down"> 3%</div>
+      </div>
+    </div>
+    <div class="card-overview">
+      <div class="left">
+        <div class="info">Likes</div>
+        <div class="data">5462</div>
+      </div>
+      <div class="right">
+        <div class="info"><img src="images/icon-instagram.svg" alt="instagram"></div>
+        <div class="data up"><img src="images/icon-up.svg" alt="up"> 2257%</div>
+      </div>
+    </div>
+    <div class="card-overview">
+      <div class="left">
+        <div class="info">Profile Views</div>
+        <div class="data">52k</div>
+      </div>
+      <div class="right">
+        <div class="info"><img src="images/icon-facebook.svg" alt="fb"></div>
+        <div class="data up"><img src="images/icon-up.svg" alt="up"> 1375%</div>
+      </div>
+    </div>
+    <div class="card-overview">
+      <div class="left">
+        <div class="info">Retweets</div>
+        <div class="data">117</div>
+      </div>
+      <div class="right">
+        <div class="info"><img src="images/icon-twitter.svg" alt="twitter"></div>
+        <div class="data up"><img src="images/icon-up.svg" alt="up"> 303%</div>
+      </div>
+    </div>
+    <div class="card-overview">
+      <div class="left">
+        <div class="info">Likes</div>
+        <div class="data">507</div>
+      </div>
+      <div class="right">
+        <div class="info"><img src="images/icon-twitter.svg" alt="twitter"></div>
+        <div class="data up"><img src="images/icon-up.svg" alt="up"> 553%</div>
+      </div>
+    </div>
+    <div class="card-overview">
+      <div class="left">
+        <div class="info">Likes</div>
+        <div class="data">107</div>
+      </div>
+      <div class="right">
+        <div class="info"><img src="images/icon-youtube.svg" alt="yt"></div>
+        <div class="data down"><img src="images/icon-down.svg" alt="down"> 19%</div>
+      </div>
+    </div>
+    <div class="card-overview">
+      <div class="left">
+        <div class="info">Total Views</div>
+        <div class="data">1407</div>
+      </div>
+      <div class="right">
+        <div class="info"><img src="images/icon-youtube.svg" alt="yt"></div>
+        <div class="data down"><img src="images/icon-down.svg" alt="down"> 12%</div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+</body>
+</html>
